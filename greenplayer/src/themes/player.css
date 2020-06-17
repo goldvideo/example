@@ -1,0 +1,38 @@
+/* npm 源码开发模式 */
+/* @import '@goldvideo/h265player/dist/goldplay-h265.css'; */
+/* 本地源码开发模式 */
+@import '../../../../h265player/dist/goldplay-h265.css';
+
+.goldplay__progressbar--play {
+  background-color: rgba(50, 200, 15, 0.8);
+}
+.goldplay__progressbar--dot:hover::before {
+  background: #00c000;
+  border: 1px solid #00c000;
+}
+.goldplay__screen--poster-image {
+  filter:'';
+  height: 106px;
+}
+.goldplay__screen--poster-speed {
+  margin-top: 15px;
+  color: #999;
+}
+.goldplay__progressbar--dot-hover::before {
+  background: #00c000;
+  border: 1px solid #00c000;
+}
+.goldplay__volume-bar--rod:hover::before {
+  background: #00c000;
+  border: 1px solid #00c000;
+}
+.goldplay__volume-bar--rod-hover::before {
+  background: #00c000;
+  border: 1px solid #00c000;
+}
+.goldplay__volume-bar--size {
+  background: #00c000;
+}
+.goldplay-hoverbox .gp-selected {
+  color: #00c000;
+}

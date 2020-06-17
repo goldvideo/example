@@ -1,2 +1,5 @@
 # example
-really example for goldvideo project
+some example for goldvideo project
+
+## green player
+[greenplayer example](./greenplayer)
