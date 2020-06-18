@@ -1,26 +1,30 @@
 # INTRODUCE
 
-This example is based on GoldVideo open source project (https://github.com/goldvideo, It  is H.265 player for web）
+This example is based on GoldVideo open source project (https://github.com/goldvideo/h265player, It  is H.265 player for web）
 
-You can download the code locally and run the trial.
+You can download the code and run the demo.
 
 ## INSTSLL
 
 ```shell
-	# npm -i goldvideo
-	# provide goldvideo npm after, need download source code current.
+	$ npm i goldvideo-player
 	$ npm install
 	# npm audit fix
-	$ npm run dev
-	$ npm run test
-	$ npm run build
-	# rollup -c
+	$ npm run dev   # dev mode
+	# npm run test  # test mode
+	# npm run build # production mode
+	# rollup -c     # build es module
 ```
+
+## PERPARE LIBRARY
+
+- Copy lib files(libffmpeg.js, libffmpeg.wasm) from [h265player/dist/lib](../../h265player/dist/lib). 
+	or compile from [docoder_wasm](../../docoder_wasm) module
 
 ## CONFIG NGINX
 ```javascript
   server {
-      listen       9900;
+      listen       8000;
       location / {
           root   <path>/goldvideo;
           index  index.html index.htm;
@@ -30,4 +34,4 @@ You can download the code locally and run the trial.
 ```
 
 ## PREVIEW
-	visit: http://127.0.0.1:9900/example/greenplayer/demo/demo.html
+	visit: http://127.0.0.1:8000/example/greenplayer/demo/demo.html

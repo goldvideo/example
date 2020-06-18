@@ -18,7 +18,9 @@
     "type": "git",
     "url": "https://github.com/goldvideo/example/greenplayer.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "goldvideo-player": "^1.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",

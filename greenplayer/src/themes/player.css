@@ -1,7 +1,7 @@
 /* npm 源码开发模式 */
-/* @import '@goldvideo/h265player/dist/goldplay-h265.css'; */
+@import 'goldvideo-player/dist/goldplay-h265.css';
 /* 本地源码开发模式 */
-@import '../../../../h265player/dist/goldplay-h265.css';
+/* @import '../../../../h265player/src/themes/player.css'; */
 
 .goldplay__progressbar--play {
   background-color: rgba(50, 200, 15, 0.8);
