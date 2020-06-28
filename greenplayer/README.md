@@ -4,7 +4,7 @@ This example is based on GoldVideo open source project (https://github.com/goldv
 
 You can download the code and run the demo.
 
-## INSTSLL
+## INSTALL
 
 ```shell
 	$ npm i goldvideo-player     # @see https://www.npmjs.com/package/goldvideo-player
@@ -12,7 +12,7 @@ You can download the code and run the demo.
 	$ npm run dev                # @see package.json
 ```
 
-## PERPARE LIBRARY[optional]
+## PREPARE LIBRARY[optional]
 
 - Copy lib files(`libffmpeg.js, libffmpeg.wasm`) to `dist/lib` from [h265player/dist/lib](../../h265player/dist/lib). 
 	or compile from [docoder_wasm](../../docoder_wasm) module by self. This example includes these lib files already.
@@ -30,4 +30,4 @@ You can download the code and run the demo.
 ```
 
 ## PREVIEW
-	visit: http://127.0.0.1:8000/example/greenplayer/demo/demo.html
+visit: http://127.0.0.1:8000/example/greenplayer/demo/demo.html
