@@ -7,13 +7,9 @@ You can download the code and run the demo.
 ## INSTSLL
 
 ```shell
-	$ npm i goldvideo-player
-	$ npm install
-	# npm audit fix
-	$ npm run dev   # dev mode
-	# npm run test  # test mode
-	# npm run build # production mode
-	# rollup -c     # build es module
+	$ npm i goldvideo-player     # @see https://www.npmjs.com/package/goldvideo-player
+	$ npm install                # maybe need input `npm audit fix` etc. 
+	$ npm run dev                # @see package.json
 ```
 
 ## PERPARE LIBRARY
