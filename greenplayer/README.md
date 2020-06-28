@@ -12,10 +12,10 @@ You can download the code and run the demo.
 	$ npm run dev                # @see package.json
 ```
 
-## PERPARE LIBRARY
+## PERPARE LIBRARY[optional]
 
-- Copy lib files(libffmpeg.js, libffmpeg.wasm) from [h265player/dist/lib](../../h265player/dist/lib). 
-	or compile from [docoder_wasm](../../docoder_wasm) module
+- Copy lib files(`libffmpeg.js, libffmpeg.wasm`) to `dist/lib` from [h265player/dist/lib](../../h265player/dist/lib). 
+	or compile from [docoder_wasm](../../docoder_wasm) module by self. This example includes these lib files already.
 
 ## CONFIG NGINX
 ```javascript
