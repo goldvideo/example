@@ -21,7 +21,7 @@ You can download the code and run the demo.
 ```javascript
   server {
       listen       8000;
-      location / {
+      location /example/greenplayer {
           root   <path>/goldvideo;
           index  index.html index.htm;
           autoindex on;
