@@ -1,0 +1,70 @@
+<!Doctype html>
+<html xmlns=http://www.w3.org/1999/xhtml> <head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<meta content=always name=referrer>
+<link rel="shortcut icon" href=/favicon.ico type=image/x-icon> <title>H.265在线播放器DEMO</title>
+<link rel="stylesheet" href="../dist/goldplay-h265.css">
+<script src="../dist/goldplay-h265-sdk.js"></script>
+<style>
+  .play-container {
+    width: 800px;
+    height: 600px;
+    /* background-color: #000; */
+    margin: 20px 0 0 100px;
+    float:left;
+  }
+
+  .inline {
+    display: inline-block;
+    width: 50px;
+  }
+</style>
+</head>
+
+<body>
+<!-- <h1>原始MP4播放器</h1>
+<video id="OriginPlayer" width="320" src="../data/mp4/song_h265.mp4" controls preload="auto">
+</video>
+<hr clear="all"><br> -->
+  <div id="PlayerWrapper">
+    <h1>H.265 Player 在线播放器。MP4分range加载<em class="demo1" id="Demo1">DEMO</em></h1>
+    <div class="play-container"></div>
+  </div>
+  <br clear="all">
+  <br>
+  <script>
+    (function (win, doc) {
+      const Config = {
+        get basePath() {
+          let path = win.location.origin
+          let pathname = win.location.pathname
+          let demoIdx = pathname.lastIndexOf('/demo/')
+          return path + pathname.substr(0, demoIdx)
+        },
+        get buildPath() {
+          return this.basePath + '/dist/'
+        },
+        get libPath() {
+          return this.buildPath + 'lib/'
+        },
+        get src() {
+          // 使用体积更小的示例文件，避免大文件导致浏览器卡死
+          return this.basePath + '/data/mp4/song_h265.mp4'
+          // return this.basePath + '/data/mp4/tractor_h265.mp4'
+        }
+      }
+      let el = doc.querySelector('.play-container')
+      let player = new GoldPlay(el, {
+        sourceURL: Config.src,
+        type: 'MP4',
+        libPath: 'http://127.0.0.1:8000/h265player/dist/lib/',  // 使用完整绝对 URL
+        playBackRate: 1,
+        autoPlay: false,
+      })
+      // player.destroy()
+    })(window, document)
+  </script>
+</body>
+
+</html>
